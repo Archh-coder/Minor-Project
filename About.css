@@ -1,0 +1,53 @@
+/* About Page Styles */
+#about-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-us h2 {
+    font-size: 36px;
+    color: #2f4f4f;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#about-us h3 {
+    font-size: 28px;
+    color: #3e8e41;
+    margin-bottom: 15px;
+}
+
+#about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about-us ul li {
+    font-size: 18px;
+    color: #333;
+    padding: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}

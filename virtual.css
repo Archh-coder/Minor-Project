@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centered 3D Model */
+model-viewer {
+    width: 100vw;
+    height: 100vh;
+}
+
+ /* Hidden Info Box */
+ #info-box {
+    position: fixed;
+    
+
+    top: 10px;
+    left: 10px;
+    /* background-color: #deebf3; */
+     color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 255, 0.5);
+    display: none;
+    transition: all 2s ease-in-out; 
+
+     width: 500px;;
+    height: 300px;       
+   overflow-y: auto;        
+   word-wrap: break-word;   
+  z-index: 100; 
+  font-size: 14px;    
+ } 
+
+
+ #info-box:not(.hidden) {
+    display: block;
+}
+
+.close-button{
+    border-radius:20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+.close-button:hover{
+    background-color: #3e8e41;
+}
+
+.hotspot{
+    /* border-radius: 100%; */
+    border-color:rgba(255, 255, 255, 0) ;
+    background-color:rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+

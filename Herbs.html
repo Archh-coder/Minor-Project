@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbs Directory|Ayush Virtual Herbal Garden</title>
+    <link rel="icon" href="images/ayush logo2.jpg">
+    <link rel="stylesheet" href="herbs.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- HEADER SECTION -->
+        <!-- HEADER LOGO -->
+        <div class="header-container">
+            <div class="logo">
+                <img class="website-logo" src="./images/ayush logo2.jpg" alt="website-logo">
+                <h2>Ayush Virtual Herbal Garden</h2>
+            </div>
+            <!-- HEADER NAV -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Herbs.html">Herbs Directory</a></li>
+                    <li><a href="#virtual">Virtual Garden</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- HEADER BUTTONS -->
+            <div class="buttons">
+                <input type="text" placeholder="Search for a herb" class="search-button">
+
+
+                <!-- Filter Button -->
+                <div class="dropdown">
+                    <button class="dropdown-button"><i class="fa-solid fa-bars"></i>Filter</button>
+                    <div class="dropdown-content">
+                        <a href="#">All Types</a>
+                        <a href="#">Medicinal</a>
+                        <a href="#">Culinary</a>
+                        <a href="#">Aromatic</a>
+                        <!-- <a href="#">Culinary</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="herbs-section">
+        <div class="herbs-controls">
+            <input type="text" id="searchInput" placeholder="Search herbs...">
+            <select id="categoryFilter">
+                <option value="all">All Types</option>
+                <option value="medicinal">Medicinal</option>
+                <option value="culinary">Culinary</option>
+                <option value="aromatic">Aromatic</option>
+            </select>
+        </div>
+
+        <div class="herbs-grid" id="herbsGrid">
+            <!-- Sample herb card -->
+            <div class="herb-card" data-category="medicinal">
+                <img src="./images/tulsi.avif" alt="Tulsi">
+                <h3>Tulsi</h3>
+                <p>A sacred herb used in Ayurveda with healing properties.</p>
+            </div>
+
+            <div class="herb-card" data-category="medicinal">
+                <img src="./Herbs/chamomile.avif" alt="Chamomile">
+                <h3>Chamomile</h3>
+                <p>Known for its calming effects, it aids sleep and digestion.</p>
+            </div>
+
+            <!-- <div class="herb-card" data-category="medicinal">
+                <img src="./Herbs/Echinacea.avif" alt="Echinacea">
+                <h3>Echinacea</h3>
+                <p>Boosts the immune system and helps fight colds and infections.</p>
+            </div> -->
+
+            <div class="herb-card" data-category="medicinal">
+                <img src="./Herbs/ginger.avif" alt="Ginger">
+                <h3>Ginger</h3>
+                <p>Effective against nausea, inflammation, and indigestion.</p>
+            </div>
+
+            <div class="herb-card" data-category="medicinal">
+                <img src="./Herbs/turmeric.avif" alt="Turmeric">
+                <h3>Turmeric</h3>
+                <p>Rich in curcumin, it has strong anti-inflammatory properties.</p>
+            </div>
+
+            <div class="herb-card" data-category="medicinal">
+                <img src="./Herbs/peppermint.avif" alt="Peppermint">
+                <h3>Peppermint</h3>
+                <p>Used for headaches, digestive relief, and respiratory health.</p>
+            </div>
+
+            <!-- <div class="herb-card" data-category="medicinal">
+                <img src="./Herbs/lavender.avif" alt="Lavender">
+                <h3>Lavender</h3>
+                <p>Popular for its calming scent; reduces stress and promotes sleep.</p>
+            </div> -->
+
+            <div class="herb-card" data-category="medicinal">
+                <img src="./Herbs/ashwagandha.webp" alt="Ashwagandha">
+                <h3>Ashwagandha</h3>
+                <p>Adaptogenic herb that helps manage stress and supports energy.</p>
+            </div>
+
+            <div class="herb-card" data-category="culinary">
+                <img src="./images/basil.avif" alt="Basil">
+                <h3>Basil</h3>
+                <p>Aromatic herb used in both cooking and wellness.</p>
+            </div>
+
+            <div class="herb-card" data-category="culinary">
+                <img src="./Herbs/mint.avif" alt="Mint">
+                <h3>Mint</h3>
+                <p>Cool and refreshing, used in teas, desserts, and savory dishes.</p>
+            </div>
+
+            <div class="herb-card" data-category="culinary">
+                <img src="./Herbs/rosemary.avif" alt="Rosemary">
+                <h3>Rosemary</h3>
+                <p>Fragrant herb great for roasting meats, potatoes, and breads.</p>
+            </div>
+            <!-- Add more herbs here (up to 15, 30, or more!) -->
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ayush Virtual Herbal Garden | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+        }
+
+        const searchInput = document.getElementById("searchInput");
+        const categoryFilter = document.getElementById("categoryFilter");
+        const herbs = document.querySelectorAll(".herb-card");
+
+        function filterHerbs() {
+            const searchText = searchInput.value.toLowerCase();
+            const category = categoryFilter.value;
+
+            herbs.forEach(card => {
+                const name = card.querySelector("h3").textContent.toLowerCase();
+                const herbCategory = card.getAttribute("data-category");
+
+                const matchesSearch = name.includes(searchText);
+                const matchesCategory = category === "all" || herbCategory === category;
+
+                card.style.display = matchesSearch && matchesCategory ? "block" : "none";
+            });
+        }
+
+        searchInput.addEventListener("input", filterHerbs);
+        categoryFilter.addEventListener("change", filterHerbs);
+    </script>
+
+</body>
+
+</html>

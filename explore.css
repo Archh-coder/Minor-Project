@@ -1,0 +1,125 @@
+/* MAIN SECTION */
+.main-section {
+  padding: 3rem 1rem;
+  background-color: #edf7ed;
+  background-image: url('https://www.transparenttextures.com/patterns/leaf.png'), linear-gradient(145deg, #edf7ed, #dbeed5);
+  background-repeat: repeat;
+  background-size: auto, cover;
+  border-top: 2px solid #c8e6c9;
+  border-bottom: 2px solid #c8e6c9;
+  margin-top: 100px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #2d572c;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #66a060;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* HERB CATEGORY GRID */
+.herb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8df;
+}
+
+/* Logo Box */
+.logo-box {
+  background-color: inherit;
+  padding: 1.2rem;
+  border-radius: 1em 1em 0 0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Card Colors */
+.card.medicinal .logo-box {
+  background-color: #4CAF50;
+}
+
+.card.culinary .logo-box {
+  background-color: #F4A261;
+}
+
+.card.aromatic .logo-box {
+  background-color: #A78BFA;
+}
+
+.card.virtual .logo-box {
+  background-color: #2DD4BF;
+}
+
+.card.contact .logo-box {
+  background-color: #E57373;
+}
+
+.card.all-herbs .logo-box {
+  background-color: #66a060;
+}
+
+/* Card Text Area */
+.card p {
+  background-color: white;
+  margin: 0;
+  padding: 1rem 0.5rem;
+  border-radius: 0 0 1rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d572c;
+}
+
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* .card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d572c;
+  margin-top: 0.5rem;
+} */
+
+/* Responsive Padding */
+@media (max-width: 768px) {
+  .main-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}

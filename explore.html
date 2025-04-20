@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Virtual Herbal Garden</title>
+  <link rel="icon" href="images/ayush logo2.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="explore.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!-- HEADER SECTION -->
+    <!-- HEADER LOGO -->
+    <div class="header-container">
+      <div class="logo">
+        <img class="website-logo" src="./images/ayush logo2.jpg" alt="website-logo">
+        <h2>Ayush Virtual Herbal Garden</h2>
+      </div>
+      <!-- HEADER NAV -->
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Herbs.html">Herbs Directory</a></li>
+          <li><a href="#virtual">Virtual Garden</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- HEADER BUTTONS -->
+      <div class="buttons">
+        <input type="text" placeholder="Search for a herb" class="search-button">
+
+
+        <!-- Filter Button -->
+        <div class="dropdown">
+          <button class="dropdown-button"><i class="fa-solid fa-bars"></i>Filter</button>
+          <div class="dropdown-content">
+            <a href="#">All Types</a>
+            <a href="#">Medicinal</a>
+            <a href="#">Culinary</a>
+            <a href="#">Aromatic</a>
+            <!-- <a href="#">Culinary</a> -->
+          </div>
+        </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main class="main-section">
+    <h2 class="section-title">Explore Our Herb Categories</h2>
+
+    <div class="grid herb-grid">
+      <div class="card all-herbs">
+        <div class="logo-box">
+          <img src="./Herbs/herbs icon.png" alt="All Herbs Icon" />
+        </div>
+        <p>All Herbs</p>
+      </div>
+
+      <div class="card medicinal">
+        <div class="logo-box">
+          <img src="./Herbs/mortar.png" alt="Medicinal Icon" />
+        </div>
+        <p>Medicinal</p>
+      </div>
+
+      <div class="card culinary">
+        <div class="logo-box">
+          <img src="./Herbs/culinary icon.png" alt="Culinary Icon" />
+        </div>
+        <p>Culinary</p>
+      </div>
+
+      <div class="card aromatic">
+        <div class="logo-box"><img src="./Herbs/aeromatic icon.png" alt="Aromatic Icon" />
+        </div>
+        <p>Aromatic</p>
+      </div>
+
+      <div class="card virtual">
+        <div class="logo-box"><img src="./Herbs/virtual icon.png" alt="Virtual Garden Icon" />
+        </div>
+        <p>Virtual Garden</p>
+      </div>
+
+      <div class="card contact">
+        <div class="logo-box"><img src="./Herbs/contact icon.png" alt="Contact Icon" />
+        </div>
+        <p>Contact Us</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER (Optional) -->
+  <footer class="footer">
+    <p>&copy; 2025 Ayush Herbal Garden. All rights reserved.</p>
+  </footer>
+
+  <!-- JS for Dropdown Toggle -->
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.nav');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

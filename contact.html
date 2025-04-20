@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ayush Virtual Herbal Garden</title>
+    <link rel="icon" href="images/ayush logo2.jpg">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- HEADER SECTION -->
+        <!-- HEADER LOGO -->
+        <div class="header-container">
+            <div class="logo">
+                <img class="website-logo" src="./images/ayush logo2.jpg" alt="website-logo">
+                <h2>Ayush Virtual Herbal Garden</h2>
+            </div>
+            <!-- HEADER NAV -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Herbs.html">Herbs Directory</a></li>
+                    <li><a href="#virtual">Virtual Garden</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- HEADER BUTTONS -->
+            <div class="buttons">
+                <input type="text" placeholder="Search for a herb" class="search-button">
+
+
+                <!-- Filter Button -->
+                <div class="dropdown">
+                    <button class="dropdown-button"><i class="fa-solid fa-bars"></i>Filter</button>
+                    <div class="dropdown-content">
+                        <a href="#">All Types</a>
+                        <a href="#">Medicinal</a>
+                        <a href="#">Culinary</a>
+                        <a href="#">Aromatic</a>
+                        <!-- <a href="#">Culinary</a> -->
+                    </div>
+                </div>
+        </div>
+    </header>
+
+      <!-- Contact Section -->
+  <section id="contact-us">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Please fill out the form below and we’ll get back to you as soon as possible.</p>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Ayush Virtual Herbal Garden. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
